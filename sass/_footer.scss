@@ -1,0 +1,123 @@
+footer{
+    background-color: 
+    #3B3B3B;
+    margin: 50px 0px;
+    .footer-botton{
+        width: 85%;
+        margin: 0px auto;
+    }
+    .footer-blog {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 10px 0px;
+        border-bottom: 2px solid #858584;
+    }
+    p{
+        color: 
+        #CCCCCC;
+    }
+    .footer-link{
+        width: 300px;
+        // border: 2px solid;
+        margin: 40px 0px 0px;
+        gap: 20px;
+    }
+    .footer-dics{
+        width: 200px;
+        margin: 20px 0px;
+    }
+    .footer-logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer-explore{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        // border: 2px solid;
+        gap: 20px;
+        // margin: auto;
+        .footer-title{
+            color: white;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+    }
+    .footer-digest{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        // border: 2px solid;
+        gap: 20px;
+        // margin: auto;
+        .footer-digest-title{
+            color: white;
+            font-size: 22px;
+            font-weight: 700;
+        }
+    }
+}
+@media(min-width:992px){
+    footer{
+        background-color: 
+        #3B3B3B;
+        margin: 50px 0px;
+        .footer-blog {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            border-bottom: 2px solid #858584;
+        }
+        p{
+            color: 
+            #CCCCCC;
+        }
+        .footer-link{
+            width: 300px;
+            // border: 2px solid;
+            margin: 40px 0px 0px;
+            gap: 20px;
+        }
+        .footer-dics{
+            width: 200px;
+            margin: 20px 0px;
+        }
+        .footer-logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .footer-explore{
+            margin: 40px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            // border: 2px solid;
+            gap: 20px;
+            // margin: auto;
+            .footer-title{
+                color: white;
+                font-size: 22px;
+                font-weight: 700;
+            }
+    
+        }
+        .footer-digest{
+            margin: 40px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            // border: 2px solid;
+            gap: 20px;
+            // margin: auto;
+            .footer-digest-title{
+                color: white;
+                font-size: 22px;
+                font-weight: 700;
+            }
+        }
+    }
+}
