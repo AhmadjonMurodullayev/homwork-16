@@ -37,6 +37,9 @@ header .header__right .header-list {
 header .header__right .header__link:hover {
   color: chartreuse;
 }
+header .sign-up1 {
+  display: none;
+}
 header .header__btns .sign-up {
   padding: 12px 22px;
   border-radius: 15px;
@@ -88,6 +91,21 @@ header .header__btns .header__btn-hamburger {
   }
   .header__list-show {
     left: 0;
+  }
+  .header__list-show .sign-up {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .header__list-show .sign-up1 {
+    display: block;
+    padding: 12px 22px;
+    border-radius: 15px;
+    background-color: #A259FF;
+    color: white;
+    border: none;
+    cursor: pointer;
   }
   .header__list-show__btn_hamburger {
     display: block;
@@ -1335,4 +1353,408 @@ footer .footer-digest .footer-digest-title {
     -o-object-fit: cover;
        object-fit: cover;
   }
+}
+.artist {
+  margin: 90px 0px 30px;
+}
+.artist-back {
+  margin: 10px 0px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  max-width: 1440px;
+  max-height: 390px;
+  min-width: 340px;
+  min-height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-image: url(../../img/artist\ becro.svg);
+  border-bottom: 2px solid blue;
+  position: relative;
+  z-index: -1;
+}
+.artist-back .artist-img {
+  position: absolute;
+  bottom: -20%;
+  z-index: -1;
+}
+.artist .animakid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 360px;
+}
+.artist .animakid .animakid-control {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.artist .animakid-title {
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+}
+.artist .animakid-button {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.artist .animakid-button .animakid-button1 {
+  width: 100%;
+  height: 56px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #A259FF;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.artist .animakid-button .animakid-button2 {
+  width: 100%;
+  height: 56px;
+  border: 2px solid #A259FF;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: inherit;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.artist .animakid-button .animakid-button2 i {
+  color: #A259FF;
+}
+.artist .animakid-number {
+  display: flex;
+  justify-content: space-between;
+}
+.artist .animakid-number-1 .number1 {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  color: white;
+}
+.artist .animakid-number-1 .number2 {
+  color: white;
+}
+.artist .animakid-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.artist .animakid-bio .bio-dick {
+  color: white;
+}
+.artist .animakid-bio img {
+  font-size: 16px;
+}
+.artist .animakid .bio-title {
+  color: #858584;
+}
+.artist .box-num {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.artist .box-num .box-num-itms {
+  margin: 0px auto;
+  max-width: 1440px;
+  max-height: 50px;
+  min-width: 350px;
+  min-height: 50px;
+  border: 2px solid;
+  padding: 10px 10px;
+}
+.artist .non {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .artist {
+    margin: 40px 0px;
+  }
+  .artist-back {
+    position: relative;
+    z-index: -1;
+  }
+  .artist-back .artist-img {
+    position: absolute;
+    bottom: -20%;
+    z-index: -1;
+    left: 72px;
+  }
+  .artist .animakid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 360px;
+  }
+  .artist .animakid .animakid-control {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .artist .animakid-title {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .artist .animakid-button {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .artist .animakid-button .animakid-button1 {
+    width: 40%;
+    height: 56px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #A259FF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  .artist .animakid-button .animakid-button2 {
+    width: 30%;
+    height: 56px;
+    border: 2px solid #A259FF;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: inherit;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  .artist .animakid-button .animakid-button2 i {
+    color: #A259FF;
+  }
+  .artist .animakid-number {
+    width: 58%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .artist .animakid-number-1 .number1 {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Space Mono", monospace;
+    color: white;
+  }
+  .artist .animakid-number-1 .number2 {
+    color: white;
+  }
+  .artist .animakid-bio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .artist .animakid-bio .bio-dick {
+    color: white;
+  }
+  .artist .animakid-bio img {
+    font-size: 16px;
+  }
+  .artist .animakid .bio-title {
+    color: #858584;
+  }
+  .artist .box-num {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+  }
+  .artist .box-num .box-num-itms {
+    margin: 0px auto;
+    max-width: 1440px;
+    max-height: 100px;
+    min-width: 350px;
+    min-height: 50px;
+    border: 2px solid;
+    padding: 10px 10px;
+  }
+  .artist .non {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .artist {
+    margin: 40px 0px;
+  }
+  .artist-back {
+    position: relative;
+    z-index: -1;
+  }
+  .artist-back .artist-img {
+    position: absolute;
+    z-index: -1;
+    bottom: -20%;
+    left: 72px;
+  }
+  .artist .animakid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    min-height: 20px;
+  }
+  .artist .animakid-title {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .artist .animakid-button {
+    width: 50%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .artist .animakid-button .animakid-button1 {
+    width: 40%;
+    height: 56px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #A259FF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  .artist .animakid-button .animakid-button2 {
+    width: 30%;
+    height: 56px;
+    border: 2px solid #A259FF;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: inherit;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  .artist .animakid-button .animakid-button2 i {
+    color: #A259FF;
+  }
+  .artist .animakid-number {
+    width: 80%;
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .artist .animakid-number-1 .number1 {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Space Mono", monospace;
+    color: white;
+  }
+  .artist .animakid-number-1 .number2 {
+    color: white;
+  }
+  .artist .animakid-bio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .artist .animakid-bio .bio-dick {
+    color: white;
+  }
+  .artist .animakid-bio img {
+    font-size: 16px;
+  }
+  .artist .animakid .bio-title {
+    color: #858584;
+  }
+  .artist .animakid .animakid-control {
+    width: 50%;
+  }
+  .artist .box-num {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+  }
+  .artist .box-num .box-num-itms {
+    margin: 0px auto;
+    max-width: 1440px;
+    max-height: 100px;
+    min-width: 350px;
+    min-height: 50px;
+    padding: 10px 10px;
+  }
+  .artist .hover {
+    display: none;
+  }
+}
+.carts {
+  background-color: #3B3B3B;
+}
+.carts .carts-link {
+  width: 100%;
+  height: 70px;
+  background-color: #2B2B2B;
+  border-top: 2px solid #3B3B3B;
+  padding: 10px 20px;
+}
+.carts .carts-link .carts-link-title {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 20px;
+}
+.carts .carts-link p {
+  color: #858584;
+  font-size: 22px;
+}
+
+.discover-box1 {
+  margin: 20px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+.discover-box1 .discover-box-itms {
+  background-color: #2B2B2B;
+  border-radius: 20px;
+}
+.discover-box1 .discover-box-itms .discover-img {
+  width: 100%;
+}
+.discover-txt {
+  font-size: 22px;
+  color: white;
+  margin: 10px 20px;
+}
+.discover-title-span {
+  display: flex;
+  gap: 10px;
+  margin: 0px 20px;
+}
+.discover-title-span p {
+  color: white;
+}
+.discover-text {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+.discover-text .color1 {
+  color: #858584;
+}
+.discover-text .color2 {
+  color: #FFFFFF;
 }

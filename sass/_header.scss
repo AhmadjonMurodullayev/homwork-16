@@ -34,6 +34,9 @@ header{
             color: chartreuse;
         }
     }
+    .sign-up1{
+        display: none;
+    }
     .header__btns{
         .sign-up{
             padding: 12px 22px;
@@ -95,6 +98,21 @@ header{
             transition: 1s;
             }
         &__list-show{
+            .sign-up{
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .sign-up1{
+                display:block;
+                padding: 12px 22px;
+                border-radius: 15px;
+                background-color: #A259FF;
+                color: white;
+                border: none;
+                cursor: pointer ;
+            }
                     left: 0;
                 &__btn_hamburger{
                     display: block;
